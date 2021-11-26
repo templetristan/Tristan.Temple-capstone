@@ -1,0 +1,272 @@
+.add-edit {
+    margin: -3rem auto 2rem auto;
+    background-color: $white;
+    border-radius: .1875rem;
+    z-index: 999;
+    background-color: $white;
+    box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+    // font-family: $titillium;
+    height: 57.625rem;
+    width: 18.437rem;
+    border-radius: .187rem;
+
+   
+
+        @include tablet {
+        width: 44rem;
+        height: 38.25rem;
+        margin: -7rem auto 2rem  auto;
+        }
+    
+        @include desktop {
+        width: 1080px;
+        border-radius: .187rem;
+        height: 38.25rem;
+      
+        }
+
+    &-box {
+    @include flexColumn;
+    align-items: flex-start;
+    padding-top: 1rem;
+    border-bottom: 1px solid $cloud;
+    width: 100%;
+    color: $instock-black;
+
+        @include tablet {
+        width: 100%;
+        padding: 1rem 0rem;
+        }
+
+        @include desktop {
+        height: 2.5rem;
+        top: 7.75rem;
+        left: 12.625rem;
+        width: 100%;
+        }
+    
+    &__icon {
+    position: relative;
+    margin-right: 1rem;
+    top: 0rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: .5rem;
+    left: 1rem;
+
+        @include tablet {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        }
+    }
+}
+
+    &-title {
+    @include pageHeader; 
+    margin: 1rem 0;
+    height: 2.25rem;
+    top: 10.5rem;
+
+        @include tablet {
+        margin-left: 0.85rem;
+        margin-top: 0rem;
+        }
+
+        @include desktop {
+        margin-left: 1.75rem;
+        }
+    }
+}
+
+.add-form {
+    margin: 0 auto; 
+    text-align: left;
+        
+        @include tablet {
+        display: flex;
+        justify-content: center;
+        }
+
+        @include desktop {
+        width: 100%;
+        }
+
+    &-container {
+    @include flexColumn;
+       
+        @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 44rem;
+        padding-top: 1rem;
+        }
+           
+        @include desktop {
+        width: 100%;
+        margin: 0;
+        }
+           
+    &--warehouse {
+    border-bottom: 1px solid $cloud;
+    padding-bottom: 1rem;
+
+        @include tablet {
+        border-right: 1px solid $cloud;
+        border-bottom: none;
+        width: 45%;
+        height: 24.25rem;
+        padding-right: .9375rem;
+        }
+  
+        @include desktop {
+        width: 46%;
+        border-right: 1px solid $cloud;
+        height: 26rem;
+        margin-top: 1rem;
+        }
+    }
+
+    &--contact {
+        @include tablet {
+        border-bottom: none;
+        width: 45%;
+        height: 24.25rem;
+        }
+      
+        @include desktop {
+        width: 46%;
+        height: 26rem;
+        margin-top: 1rem;
+        }
+   }
+}
+
+    &-heading {
+    @include subHeader;
+    margin-left: 1.5rem;
+
+        @include tablet {
+        @include deskSubheader;
+        margin-left: 1.75rem;
+        }
+
+        @include desktop {
+        width: 12.125rem;
+        height: 2rem;
+        }
+    }
+    &__title {
+    @include lableBtn;
+    margin-left: 1.5rem;
+    color: $instock-black;
+    margin: 0 1.5rem  0;
+    padding-bottom: .25rem;
+    
+        @include tablet {
+        margin-left: 2rem;
+        }
+    }
+    
+    &__input {
+    border-radius: 1.25rem;
+    // @include lableBtn;
+    color: black;
+    border: 1px solid grey;
+    width: 14.437rem;
+    height: 2.20rem;
+    margin-left: 1.5rem;
+    margin-top: 0;
+  
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 0 1rem 0;
+    
+        // @include tablet {
+        // width: 16.437rem;
+        // }
+    
+        // @include desktop {
+        // width: 26.812rem;
+        // height: 2.375rem;
+        // margin-left: 1.5rem;
+        // }
+    }
+
+    &-btn {
+    padding: 1rem 1rem;
+    width:90%;
+    height: 2.25rem;
+    // @include flex;
+    justify-content: center;
+    align-items: center; 
+    background-color:grey;
+    padding-top: 1.5rem;
+    border-radius: 0px 0px 3px 3px;
+    
+    &:focus {
+    border-color: $instock-indigo;
+    }
+    &::placeholder{
+    margin-left: 1rem;
+    padding: .9375rem;
+    }
+        
+        // @include tablet {
+        // width: 100%;
+        // height: 3.375rem;
+        // justify-content: flex-end;
+        // background: rgba(247, 248, 249, 0.7);
+        // background-color: grey;
+        // margin-top: 0.85rem;
+        // }
+
+        // @include desktop {
+        // width: 68.75rem;
+        // height: 3.375rem;
+        // margin-top: -1.15rem;
+        // }
+    
+    &__cancel {
+    border-radius: 1.25rem;
+    // @include lableBtn;
+    color: $instock-black;
+    border: 1px solid grey;
+    margin-right: .3125rem;
+    width: 7.687rem;
+    height: 2.25rem;
+
+        // @include tablet {
+        // margin-right: 1rem;
+        // height: 2.375rem;
+        // width: 4.5rem;
+        // }
+
+        // @include desktop {
+        // height: 2.375rem;
+        // width: 4.5rem;
+        // }
+    }
+
+    &__save {
+    // @include lableBtn;
+    background-color:blue;
+    border-radius: 1.25rem;
+    color: $white;
+    height: 2.25rem;
+    width: max-content;
+
+        // @include tablet {
+        // margin-right: 1.5rem;
+        // width: max-content;
+        // height: 2.375rem;
+  
+        // @include desktop {
+        // margin-right: 1.5rem;
+        // height: 1.375;
+        // width: max-content;
+        // }
+    // }
+}
+}
+}
